@@ -1,7 +1,10 @@
 package net.kaloww.thesparkawakens;
 
 import com.mojang.logging.LogUtils;
+import net.kaloww.thesparkawakens.item.ModCreativeModTabs;
+import net.kaloww.thesparkawakens.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +31,10 @@ public class TheSparkAwakens
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -42,13 +49,14 @@ public class TheSparkAwakens
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.SKINT);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -68,6 +76,7 @@ public class TheSparkAwakens
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
         }
     }
 }
