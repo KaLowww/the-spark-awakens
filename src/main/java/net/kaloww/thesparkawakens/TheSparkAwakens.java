@@ -55,7 +55,17 @@ public class TheSparkAwakens
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.FACETED_SKINT);
             event.accept(ModItems.SKINT);
+            event.accept(ModItems.SKINT_CRYSTAL);
+            event.accept(ModItems.SKINT_FRAGMENT);
+            event.accept(ModItems.SKINT_GRAIN);
+            event.accept(ModItems.ANTI_SKINT);
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.SPACE_COMPRESSION_JAR);
+            event.accept(ModItems.MODULE_PERSIK);
+            event.accept(ModItems.DREAMBOUND_SKINT);
         }
     }
 

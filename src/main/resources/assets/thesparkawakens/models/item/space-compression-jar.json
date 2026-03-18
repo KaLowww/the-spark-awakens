@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thesparkawakens:item/space-compression-jar"
+  }
+}

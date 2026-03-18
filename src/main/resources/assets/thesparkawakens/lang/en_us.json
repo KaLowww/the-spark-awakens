@@ -1,4 +1,12 @@
 {
+  "item.thesparkawakens.faceted-skint": "Faceted Skint",
+  "item.thesparkawakens.skint-crystal": "Skint Crystal",
+  "item.thesparkawakens.skint-fragment": "Skint Fragment",
   "item.thesparkawakens.skint": "Skint",
-  "creativetab.spark_ores": "Skint Ores"
+  "item.thesparkawakens.skint-grain": "Skint Grain",
+  "item.thesparkawakens.anti-skint": "Anti-Skint",
+  "item.thesparkawakens.dreambound-skint": "Dreambound Skint",
+  "item.thesparkawakens.space-compression-jar": "Space Compression Jar",
+  "item.thesparkawakens.module-p.e.r.s.i.k": "Module P.E.R.S.I.K",
+  "creativetab.all-modded-items": "All Modded Items"
 }

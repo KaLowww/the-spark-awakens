@@ -1,4 +1,12 @@
 {
+  "item.thesparkawakens.faceted-skint": "Огранённый Скинт",
+  "item.thesparkawakens.skint-crystal": "Кристал Скинта",
+  "item.thesparkawakens.skint-fragment": "Фрагмент Скинта",
   "item.thesparkawakens.skint": "Скинт",
-  "creativetab.spark_ores": "Скинтовая Руда"
+  "item.thesparkawakens.skint-grain": "Крупица Скинта",
+  "item.thesparkawakens.anti-skint": "Анти Скинт",
+  "item.thesparkawakens.dreambound-skint": "Скинт Сновидений",
+  "item.thesparkawakens.space-compression-jar": "Банка Сжатия Пространства",
+  "item.thesparkawakens.module-p.e.r.s.i.k": "Модуль П.Е.Р.С.И.К",
+  "creativetab.all-modded-items": "Все Предметы Мода"
 }
